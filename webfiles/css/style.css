@@ -1,2 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Lato&family=Merriweather&family=Montserrat&family=Source+Sans+3&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Lato&family=Merriweather&family=Montserrat&display=swap");
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../src/fonts/SourceSansPro-Regular.otf") format("woff2"), url("../../src/fonts/SourceSansPro-Regular.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  background-color: #61A8BC;
+  width: 100%;
+  position: fixed;
+}
+header nav {
+  max-width: 1900px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background: var(--bleu, #61A8BC);
+  margin: 1rem 2rem;
+  z-index: 2300;
+}
+header nav img {
+  width: 191px;
+  height: 145px;
+  flex-shrink: 0;
+}
+header nav ul {
+  display: flex;
+}
+
+nav button {
+  position: absolute;
+  top: 2.8rem;
+  right: 2rem;
+  width: 30px;
+  height: 30px;
+  border-top: solid aliceblue 4px;
+  border-bottom: solid aliceblue 4px;
+  border-left: transparent;
+  border-right: transparent;
+  cursor: pointer;
+  background-color: transparent;
+}
+nav button::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  transform: translate(-50%, -50%);
+  height: 4px;
+  background-color: aliceblue;
+}
+nav button::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  height: 4px;
+  width: 30px;
+  background-color: aliceblue;
+}
+nav li {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.625rem 1.563rem;
+  align-items: flex-start;
+}
+nav a {
+  text-decoration: none;
+  padding: 2rem;
+  color: #FFF;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+nav a:hover {
+  color: #660000;
+}
+
+main section {
+  display: flex;
+  max-width: 1900px;
+  margin: auto;
+}
+
+#prestation {
+  background-color: #61A8BC;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 190px;
+}
+#prestation h1 {
+  color: #FFF;
+  font-family: Merriweather;
+  font-size: 4.063rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#prestation p {
+  color: #FFF;
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 740px;
+}
+#prestation button {
+  color: #FFF;
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #660000;
+  width: 180px;
+  height: 50px;
+}
+
+#leftC {
+  display: flex;
+  padding: 0px 0px 50px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.s2 {
+  max-width: 1900px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  background-color: rgb(102, 0, 0);
+  z-index: 0;
+}
+.s2 .photoLeft {
+  position: relative;
+  max-width: 650px;
+  max-height: 650px;
+  left: 5rem;
+  bottom: -8rem;
+}
+.s2 .conRight {
+  position: relative;
+  padding: 2rem 5rem;
+  margin-left: 2rem;
+  gap: 10px;
+  align-self: stretch;
+  display: flex;
+  padding: 0rem 0rem 3.125rem 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex: 1 0 0;
+  align-self: stretch;
+  margin-left: 80px;
+}
+.s2 .conRight p {
+  max-width: 600px;
+  align-content: center;
+  color: #FFF;
+}
+.s2 .conRight button.tarif {
+  position: absolute;
+  display: flex;
+  right: 0;
+  bottom: 5rem;
+  background: var(--gris, #353535);
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 180px;
+  max-height: 50px;
+}
+
+.h2 {
+  max-width: 900px;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  color: var(--gris, #353535);
+  font-family: Source Sans Pro;
+  font-size: 3.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 750px;
+}
+
+p:last-of-type {
+  color: rgb(53, 53, 53);
+}
+
+button.tarif {
+  color: white;
+  background-color: rgb(102, 0, 0);
+}
+
+.s3 {
+  position: relative;
+  max-width: 1900px;
+  margin: auto;
+  background-color: rgb(53, 53, 53);
+}
+.s3 .conLeft {
+  position: relative;
+  padding: 0px 5rem;
+  gap: 10px;
+  align-self: stretch;
+  display: flex;
+  padding: 0rem 5rem 3.125rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex: 1 0 0;
+  align-self: stretch;
+  margin-left: 80px;
+}
+.s3 .conLeft p {
+  max-width: 600px;
+  align-content: center;
+  color: #FFF;
+}
+.s3 .conLeft button.tarif {
+  position: absolute;
+  display: flex;
+  right: 4rem;
+  bottom: 5rem;
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 180px;
+  max-height: 50px;
+}
+
+.photoRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  right: 5rem;
+  bottom: -5rem;
+  top: 5rem;
+}
+
+#s4 {
+  background: var(--bleu, #61A8BC);
+}
+#s4 p {
+  color: var(--gris, #353535);
+}
+#s4 button.tarif {
+  background-color: rgb(102, 0, 0);
+}
+
+#s5 {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+}
+#s5 div {
+  position: relative;
+  z-index: 150;
+  padding: 0px 5rem;
+  gap: 10px;
+  align-self: stretch;
+  display: flex;
+  padding: 0rem 5rem 3.125rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex: 1 0 0;
+  align-self: stretch;
+  margin-left: 80px;
+}
+#s5 div p {
+  max-width: 600px;
+  align-content: center;
+}
+#s5 div button.tarif {
+  position: absolute;
+  display: flex;
+  right: 4rem;
+  bottom: 5rem;
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 180px;
+  max-height: 50px;
+}
+
+footer {
+  max-width: 1900px;
+  margin: auto;
+  opacity: 0.8;
+  background: var(--bleu, #61A8BC);
+  display: flex;
+  padding: 2.5rem 5rem 0rem 5rem;
+  align-items: center;
+  gap: 10rem;
+  align-self: stretch;
+  justify-content: space-between;
+}
+footer #foot1 {
+  display: flex;
+  width: 60%;
+  margin-left: 2.5rem;
+}
+footer #foot1 h4 {
+  color: #FFF;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+footer #foot1 li {
+  list-style: none;
+  padding: 0.62rem;
+  padding-left: 0;
+}
+footer #foot1 li a {
+  text-decoration: none;
+  padding: 2.5rem;
+  padding-left: 0;
+  color: #FFF;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer p {
+  color: #FFF;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin: 2rem;
+}
+footer #last {
+  color: white;
+}
+footer #newsletter {
+  width: 40%;
+  margin-left: 5rem;
+  background-color: rgb(208, 228, 235);
+}
+footer #newsletter form {
+  display: flex;
+  padding: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+footer #newsletter form label {
+  color: var(--cliquable-actif, #600);
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer #newsletter form input {
+  display: flex;
+  padding: 0.375rem 0.625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  max-width: 25rem;
+  max-height: 2.1rem;
+}
+footer #newsletter form button {
+  background: var(--cliquable-actif, #600);
+  color: #FFF;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 10rem;
+  height: 3rem;
+}
+footer #newsletter form button:hover {
+  background-color: #660000;
+}
+
+#ch {
+  transform: rotate(90deg);
+  align-items: center;
+  position: fixed;
+  padding: 1rem;
+  bottom: 2rem;
+  right: 3rem;
+  border-radius: 100%;
+  font-size: 50px;
+  font-weight: 900;
+  color: #830101;
+  background-color: rgba(175, 194, 188, 0.561);
+  z-index: 2400;
+}
+
+.invis {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.button-animation {
+  animation: scaleButton 0.3s ease-in-out forwards;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 1024px) {
+  header nav {
+    max-width: 1024px;
+    margin: 1rem 1rem;
+  }
+  header nav li {
+    margin-top: 1rem;
+    padding: 0%;
+  }
+  header nav li a {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  main {
+    max-width: 1024;
+  }
+  main section img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  main section .conRight, main section .conLeft, main section #s5, main section #prestation {
+    display: block;
+  }
+  main section .conRight p, main section .conLeft p, main section #s5 p, main section #prestation p {
+    max-width: 200px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .h2 {
+    width: 350px;
+    font-size: 1.5rem;
+  }
+  .conLeft, #s5.div {
+    z-index: 0;
+  }
+  footer {
+    padding: 1.5rem 3rem 0rem 3rem;
+  }
+}
+@media screen and (max-width: 868px) {
+  header nav {
+    max-width: 768px;
+    margin: 0.5rem 0.5rem;
+  }
+  header nav li {
+    margin-top: 1rem;
+  }
+  header nav li a {
+    padding: 1rem;
+  }
+  main {
+    max-width: 1024;
+  }
+  main #prestation, main #s1, main .s2, main .s3, main #s5 {
+    display: block;
+  }
+  main #prestation div, main #s1 div, main .s2 div, main .s3 div, main #s5 div {
+    display: block;
+  }
+  main #prestation img, main #prestation .photoRight, main #s1 img, main #s1 .photoRight, main .s2 img, main .s2 .photoRight, main .s3 img, main .s3 .photoRight, main #s5 img, main #s5 .photoRight {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  main #prestation p, main #s1 p, main .s2 p, main .s3 p, main #s5 p {
+    max-width: 200px;
+  }
+  #horsi {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .h2 {
+    max-width: 150px;
+  }
+  footer {
+    padding: 1.5rem 3rem 0rem 3rem;
+    display: block;
+    padding: 0.5rem 1rem 0rem 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+  header nav {
+    max-width: 320px;
+    margin: 0.5rem 0.5rem;
+  }
+  header nav li {
+    margin-top: 0.5rem;
+  }
+  header nav li a {
+    padding: 0.5rem;
+  }
+  header nav img {
+    width: 90px;
+    height: 65px;
+  }
+  main {
+    max-width: 320px;
+  }
+  .h2 {
+    max-width: 100px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

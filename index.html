@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/icons/Logo.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="This Page is description the club you can start riding horse ">
-    <link rel="stylesheet" href="./webfiles/sass/style.css">
+    <link rel="stylesheet" href="./webfiles/css/style.css">
     <script src="./webfiles/js/script.js" defer></script>
     <title>ESPIRIT LIBRE</title>
 </head>
@@ -17,7 +17,7 @@
     <header>
         <div>
             <nav>
-                <img src="./src/icons/Logo.png" alt="logo a head of a horse">
+                <img src="./src/icons/Logo.png" data-img="./src/icons/Logo.png" alt="logo a head of a horse">
                 <div class="hAf">
                     
                     <ul>
@@ -34,69 +34,70 @@
     </header>
     <main>
         <section id="prestation">
-            <div class="leftC">
+            <div id="leftC">
                 <h1>Nos prestations</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
                     accumsan lacus vel facilisis.</p>
                 <button>En savoir +</button>
             </div>
-            <img src="./src/images/1.png" alt="person riding a black horse">
+            <img src="#" data-img="./src/images/1.png" alt="person riding a black horse">
         </section>
 
 
-        <section id="s2">
-            <div class="photoLeft">
-                <img src="./src/images/2.png" alt="lading riding qhite horse jumbing">
-            </div>
+        <section class="s2">
+           
+                <div class="photoLeft"><img src="#" data-img="./src/images/2.png"   alt="lading riding qhite horse jumbing"></div>
+            
             <div class="conRight">
-                <button class="h2">COURS <strong>CSO / CCE</strong> </button>
+                <button type="submit" class="h2">COURS <strong>CSO / CCE</strong> </button>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                    accumsan lacus vel facilisis.</p>
-                <button>Planning & Tarifs</button>
+                    accumsan lacus vel facilisis.
+                </p>
+                <button type="submit" class="tarif">Planning & Tarifs</button>
             </div>
         </section>
-        <section id="s3">
-            <div>
+        <section class="s3">
+            <div class="conLeft">
                 <button class="h2">COURS <strong>CSO / CCE</strong> </button>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
                     accumsan lacus vel facilisis.
                 </p>
-                <button>Planning & Tarifs</button>
+                <button class="tarif">Planning & Tarifs</button>
 
             </div>
-            <div>
-                <img src="./src/images/3.png" alt="man riding a running black horse">
+            <div >
+                <img src="#" data-img="./src/images/3.png"  class="photoRight" alt="man riding a running black horse">
             </div>
         </section>
-        <section id="s4">
+        <section class="s2" id="s4">
             <div>
-                <img src="./src/images/4.png" alt="the nose of a horse brown">
+                <img src="#" data-img="./src/images/4.png" id="horsi" class="photoLeft" alt="the nose of a horse brown">
             </div>
-            <div>
+            <div class="conRight">
                 <button class="h2">COURS <strong>ENFANTS</strong> </button>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
                     accumsan lacus vel facilisis.
 
                 </p>
-                <button>Planning & Tarifs</button>
+                <button class="tarif">Planning & Tarifs</button>
             </div>
         </section>
         <section id="s5">
-            <div>
+            <div >
                 <button class="h2">BALADES & PENSIONS </button>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
                     accumsan lacus vel facilisis.
                 </p>
-                <button>Planning & Tarifs</button>
+                <button class="tarif">Planning & Tarifs</button>
             </div>
             <div>
-                <img src="./src/images/5.png" alt="heads of horses in thier place">
+                <img src="#" data-img="./src/images/5.png" class="photoRight" alt="heads of horses in thier place">
             </div>
         </section>
 
@@ -119,8 +120,7 @@
                     </ul>
                 </div>
             </div>
-            <p>Original Designe By Noémie Boulanger. <br>
-            Figma Transposed By Yohann Moy</p>
+            <p id="last">Original Designe By Noémie Boulanger. <br> Figma Transposed By Yohann Moy</p>
 
 
         </section>
